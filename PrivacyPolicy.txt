@@ -1,0 +1,19 @@
+Privacy Policy for Twitch Austrian Dialect Translator
+
+Last updated: December 2024
+
+DATA COLLECTION
+This extension does NOT collect, store, or transmit any personal data. 
+
+LOCAL STORAGE
+The extension stores only user preferences (toggle settings) locally on your device using Chrome's storage API. This data never leaves your browser.
+
+PERMISSIONS USED
+- Host permission (twitch.tv): Required to read and modify chat text for translation
+- Storage permission: Required to save your preference settings locally
+
+THIRD-PARTY SERVICES
+This extension does not communicate with any external servers or third-party services. All translation processing occurs locally in your browser.
+
+CONTACT
+For questions, contact: almin.islamovic@gmail.com
