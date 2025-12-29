@@ -1,0 +1,63 @@
+/* Twitch Austrian Dialect Translator - Chat Styles */
+
+/* Subtle indicator for translated messages */
+.austrian-translated {
+  position: relative;
+  cursor: help;
+}
+
+/* Small flag indicator after translated text */
+.austrian-translated::after {
+  content: " 🇦🇹";
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+/* Hover effect to highlight translation */
+.austrian-translated:hover {
+  background-color: rgba(237, 28, 36, 0.1);
+  border-radius: 2px;
+}
+
+/* Appended translation style */
+.austrian-translation-append {
+  color: #bf94ff;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+/* Custom tooltip styling (optional enhancement) */
+.austrian-translated[title] {
+  position: relative;
+}
+
+/* Animation for new translations */
+@keyframes austrian-highlight {
+  0% {
+    background-color: rgba(237, 28, 36, 0.3);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.austrian-translated.new-translation {
+  animation: austrian-highlight 1s ease-out;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  .austrian-translated:hover {
+    background-color: rgba(237, 28, 36, 0.15);
+  }
+  
+  .austrian-translation-append {
+    color: #bf94ff;
+  }
+}
+
+/* Ensure emoji flag is visible on all backgrounds */
+.austrian-translated::after {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
